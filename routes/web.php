@@ -19,10 +19,11 @@ Route::get('/', function () {
 });
 
 #Lo que esta a la izquierda es el nombre de la ruta y lo de la derecha la ubicacion
-Route::view('/principio', '/inicio');
+Route::view('/principio', '/welcome');
 Route::view('/soporte', '/preguntas');
 Route::view('/micuenta', '/contacto');
 
 #tienda
-Route::view('/catalogo', '/tienda/catalogo');
+Route::view('/tienda', '/tienda/tienda');
 Route::view('/producto', '/tienda/producto');
+Route::view('/carrito', '/components/carrito');
